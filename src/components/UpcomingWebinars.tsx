@@ -64,7 +64,8 @@ function UpcomingWebinars() {
             {
               title: webinar.title,
               description: webinar.description,
-              link: '/'
+              link: `/webinar/${webinar.slug}`, // Updated link to use the slug
+              key: webinar.slug, // Assign unique key
             }
           ))}
           />
